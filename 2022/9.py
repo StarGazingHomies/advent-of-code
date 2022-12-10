@@ -9,7 +9,6 @@ def moveTail(head, tail):
     # No need to move
     if abs(head[0]-tail[0]) <= 1 and abs(head[1]-tail[1]) <= 1:
         return [0,0]
-
     return [getDir(head[0], tail[0]), getDir(head[1], tail[1])]
 
 def getDirection(char):
